@@ -37,15 +37,6 @@ export class AppComponent implements OnInit {
   skill_tags: Array<string> = ["angular","art","bootstrap","cs","design","flask","htmlcss","java","javascript","pm","python","unity"];
   chosen_skill: any = [];
   selected_skill: any;
-  toppings = new FormControl();
-  toppingList: string[] = [
-    "Extra cheese",
-    "Mushroom",
-    "Onion",
-    "Pepperoni",
-    "Sausage",
-    "Tomato",
-  ];
 
   constructor() {}
 
