@@ -1,0 +1,16 @@
+<div class="col">
+    <ul class="d-flex flex-wrap m-0 p-0">
+      <li class="text-dark mt-1 mx-1 p-1" *ngFor="let skill of skill_list">{{ skill }}</li>
+    </ul>
+    <a
+      class="project bg-shadow mb-5 d-flex align-items-center justify-content-center rounded" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      [href]="link"
+    >
+      <img class="h-100 w-100 rounded" [src]="image_thumbnail" alt="Visit Website"/>
+      <div class="overlay bg-overlay rounded"></div>
+      <div class="circle"></div>
+      <h4 class="title text-white text-center">{{title}}</h4>
+    </a>
+  </div>

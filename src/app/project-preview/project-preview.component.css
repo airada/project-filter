@@ -1,0 +1,58 @@
+h4 {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: x-small;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .project {
+    cursor: pointer;
+    max-height: 250px;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .project:hover .overlay, 
+  .project:hover .title, 
+  .project:hover .circle {
+    display: none;
+  }
+  
+  .bg-shadow {
+    box-shadow: 10px 20px 20px rgba(128, 128, 128, 0.4);
+  }
+  
+  .overlay {
+    bottom: 0;
+    left:0;
+    position: absolute;
+    right:0;
+    top:0;
+  }
+  
+  .bg-overlay {
+    background-color: #0b2228af;
+    color: #0b2228af;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .circle {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dotted white;
+    border-radius: 75px;
+    height: 150px;
+    position: absolute;
+    width: 150px;
+  }
+  
+  .title {
+    position: absolute;
+    width: 100px;
+  }

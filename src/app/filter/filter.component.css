@@ -1,0 +1,165 @@
+/* Works on Firefox */
+* {
+    scrollbar-color:grey;
+    scrollbar-width: thin;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+  }
+  
+  *,*:focus,*:hover{
+    outline:none;
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightgray;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:  lightgray;
+  }
+  
+  input {
+    background-color: transparent;
+    border: none;
+    color: #0b2228;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free", "Montserrat";
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    color: black;
+    min-width: 100%;
+  }
+  
+  .box {
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 2px ;
+    border-radius: 15px 0px 0px 15px;
+    color: white;
+    cursor: text;
+    min-height: 40px;
+  }
+  
+  .box-bottom {
+    border-radius: 15px 0px 0px 0px;
+  }
+  
+  /* Badges */
+  .badge,
+  .badge-pill {
+    background-color: #fd7e14;
+    color: white;
+    font-size: 10pt;
+  }
+  
+  .badge:hover,
+  .badge-pill:hover {
+    background-color: #803300;
+    cursor: pointer;
+  }
+  
+  /* Clear */
+  .fa-filter, .fa-times {
+    color: darkgray;
+  }
+  .clear:hover .fa-times {
+    color: #0b2228;
+  }
+  
+  /* Dropdown Button */
+  .fa-sort {
+    color: white;
+  }
+  
+  .caret {
+    background-color: darkgray;
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  .caret-bottom {
+    border-radius: 0px 15px 0px 0px;
+  }
+  
+  .caret:hover {
+    background-color: #0b2228;
+  }
+  
+  .caret:hover .fa-sort {
+    color: white;
+  }
+  
+  /* Dropdown Content */
+  .hide {
+    display: none;
+  }
+  
+  .dropdown-content {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-color: grey;
+    scrollbar-width: thin;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .bg-selected {
+    background-color: #ffe6d5;
+  }
+  
+  .dropdown-item {
+    border-bottom: 1px solid rgba(220, 220, 220, 0.75);
+  }
+  
+  .active,
+  .dropdown-item.active,
+  .dropdown-item:active,
+  .dropdown-item:hover {
+    background-color: lightgrey;
+  }
+  
+  .active.bg-selected,
+  .dropdown-item:hover.bg-selected {
+    background-color: #fd7e14;
+    color: white;
+  }
+  
+  .checkbox-hide input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+  }

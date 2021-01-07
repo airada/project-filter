@@ -1,0 +1,69 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<main>
+    <app-filter (filter_skill)="filter($event)"
+    skills="Angular,Art,Bootstrap,C#,Design,Flask,HTML/CSS,Java,JavaScript,Project Management,Python,Unity"></app-filter>
+
+    <div class="d-flex flex-wrap justify-content-center mt-3">
+        <app-project-preview
+          class="htmlcss bootstrap angular design"
+          title="TITLE 1"
+          skills="HTML/CSS,Bootstrap,Angular,Design"
+          image_thumbnail="/assets/1.png"
+          link="#">
+        </app-project-preview>
+        <app-project-preview
+          class="python flask js htmlcss bootstrap"
+          title="TITLE 2"
+          skills="Python,Flask,JavaScript,HTML/CSS,Bootstrap"
+          image_thumbnail="/assets/2.png"
+          link="#">
+        </app-project-preview>
+        <app-project-preview
+          class="cs unity design"
+          title="TITLE 3"
+          skills="C#,Unity,3D Design"
+          image_thumbnail="/assets/3.png"
+          link="#">
+        </app-project-preview>
+        <app-project-preview
+          class="unity design pm art"
+          title="TITLE 4"
+          skills="Unity,Art,Design,Project Management"
+          image_thumbnail="/assets/4.png"
+          link="#">
+        </app-project-preview>
+        <app-project-preview 
+          class="cs unity art"
+          title="TITLE 5"
+          skills="C#,Unity,Art"
+          image_thumbnail="/assets/5.png"
+          link="#">
+        </app-project-preview>
+        <app-project-preview
+          class="htmlcss js design"
+          title="TITLE 6"
+          skills="HTML/CSS,JavaScript, Design"
+          image_thumbnail="/assets/6.png"
+          link="#"></app-project-preview>
+        </div> 
+</main>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<router-outlet></router-outlet>
