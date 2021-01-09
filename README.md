@@ -1,6 +1,48 @@
 # ProjectFilter
+A multi-select dropdown with search and autosuggestions that filter through project cards. 
+Project-filter was originally made to showcase portfolio projects. It uses a simple search bar/multi-select dropdown to filter relevant projects using tags. The multi-select function is **not** mutually exclusive (projects must contain all selected tags in order to be displayed).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+## DEMO
+
+TBA
+
+### Features
+- Free to use, open-source, fully customizable
+- Mobile-first responsive design, working across multiple browsers and devices
+- Simple and user-friendly interface
+- Allows for multiple (non-mutually exclusive) selection
+- Gives auto-suggestions with each key-press
+- Can use keyboard keys:   
+    - arrow keys to navigate options
+    - backspace to delete last selected tag
+    - enter/return key to submit search input
+- Alert message animation for searched items not found
+- Clear All button
+
+To be added:
+- Auto-complete
+- Option to minimize all tags (only showing first *X* number of tags when there are several selections.)
+- More subtle feedback animations
+- Themes (different color palettes)
+
+To do:
+- Fix current issues
+- Publish project as an NPM package
+
+# Getting Started
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5, and styled with [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) version 4.5.2.
+
+Follow [this link](https://angular.io/guide/setup-local) for instructions on how to install Angular. Angular is required to run and build this project.
+
+## About Components
+There are two Angular components: filter and project-preview. CSS Files can be edited to suit user's preferred design.
+
+### Filter
+Handles the searching and selection, and displays the selected tags and dropdown options.
+
+### Project-preview
+Displays project information such as tags and title. Links to project website in another tab.
+
 
 ## Development server
 
@@ -25,3 +67,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl } from "@angular/forms";
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {
   trigger,
   state,
@@ -25,7 +26,7 @@ import {
         animate('1s ease-out')
       ]),
       transition('closed => open', [
-        animate('0.5s ease-in')
+        animate('1s ease-in')
       ]),
     ]),
   ]

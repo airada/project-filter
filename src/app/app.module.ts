@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilterComponent } from './filter/filter.component';
 import { ProjectPreviewComponent } from './project-preview/project-preview.component';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   exports:[AppRoutingModule, FilterComponent],
@@ -19,7 +21,9 @@ import { ProjectPreviewComponent } from './project-preview/project-preview.compo
     CommonModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule, 
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

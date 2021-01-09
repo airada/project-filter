@@ -7,6 +7,11 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <main>
+  <div id="alert" [@alert]="skillExist ? 'closed' : 'open'" class="container alert alert-danger mt-0 py-2 d-none" role="alert">
+    <p class="my-auto"><b class="mr-1">Sorry!</b> Skill currently not available.</p>
+  </div>
+
+  <div class="mt-5">
     <app-filter (filter_skill)="filter($event)"
     skills="Angular,Art,Bootstrap,C#,Design,Flask,HTML/CSS,Java,JavaScript,Project Management,Python,Unity"></app-filter>
 
@@ -53,6 +58,7 @@
           image_thumbnail="/project-filter/assets/6.png"
           link="#"></app-project-preview>
         </div> 
+  </div>
 </main>
 
 
