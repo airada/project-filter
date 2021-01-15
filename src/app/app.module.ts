@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilterComponent } from './filter/filter.component';
 import { ProjectPreviewComponent } from './project-preview/project-preview.component';
-import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -22,9 +22,8 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, 
-    NoopAnimationsModule
-  ],
+    BrowserAnimationsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

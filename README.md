@@ -37,10 +37,10 @@ Follow [this link](https://angular.io/guide/setup-local) for instructions on how
 ## About Components
 There are two Angular components: filter and project-preview. CSS Files can be edited to suit user's preferred design.
 
-### Filter
+**Filter**
 Handles the searching and selection, and displays the selected tags and dropdown options.
 
-### Project-preview
+**Project-preview**
 Displays project information such as tags and title. Links to project website in another tab.
 
 

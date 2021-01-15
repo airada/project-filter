@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl } from "@angular/forms";
-import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   trigger,
   state,
@@ -20,13 +20,13 @@ import {
         opacity: 1
       })),
       state('closed', style({
-        opacity: 0,
+        opacity: 0
       })),
       transition('open => closed', [
-        animate('1s ease-out')
+        animate('1s 2s ease-out')
       ]),
       transition('closed => open', [
-        animate('1s ease-in')
+        animate('1.5s ease-in')
       ]),
     ]),
   ]
@@ -45,18 +45,21 @@ export class AppComponent implements OnInit {
 
   filter($event: string) {
     if($event == "invalid"){
-      this.alert_fadein();
-      this.alert_fadeout();
+      //ease in error message
+      this.skillExist = false;
+
+      //wait 3s, then ease out
+      setTimeout( () => {
+        this.skillExist = true;
+      }, 3000);
+
       return;
     }
 
     this.selected_skill = $event;
 
     if (this.chosen_skill.includes(this.selected_skill)) {
-      this.chosen_skill.splice(
-        this.chosen_skill.indexOf(this.selected_skill),
-        1
-      );
+      this.chosen_skill.splice(this.chosen_skill.indexOf(this.selected_skill), 1);
     } else {
       this.chosen_skill.push(this.selected_skill);
     }
@@ -99,18 +102,4 @@ export class AppComponent implements OnInit {
       element.classList.toggle("hidden", flag);
     });
   }
-
-  alert_fadein() {
-    let alert = <HTMLElement>(document.getElementById("alert"));
-    alert.classList.remove("d-none");
-    this.skillExist = false;
-  }
-
-  alert_fadeout() {
-    let alert = <HTMLElement>(document.getElementById("alert"));
-    setTimeout( () => {
-          this.skillExist = true;
-          setTimeout( () => { alert.classList.add("d-none");}, 1000)
-        }, 3000);
-   }
 }
