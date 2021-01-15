@@ -18,11 +18,12 @@ Follow [this link](https://angular.io/guide/setup-local) for instructions on how
 There are two Angular components: filter and project-preview. CSS Files can be edited to suit user's preferred design.
 
 ```
-Filter:             Handles the searching and selection, and displays the selected tags and dropdown options.  
-Project-preview:    Displays project information such as tags and title. Links to project website in another   
-                    tab.
-App:                Contains both filter and project components. Receives event trigger to display projects 
-                    based on filtered skill tags.
+Filter:             Handles the searching and selection, and displays the selected tags and dropdown  
+                    options.  
+Project-preview:    Displays project information such as tags and title. Links to project website in  
+                    another tab.
+App:                Contains both filter and project components. Receives event trigger to display  
+                    projects based on filtered skill tags.
 ```
 
 ### Development server
