@@ -1,4 +1,5 @@
 # ProjectFilter
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)  
 A multi-select dropdown with search and autosuggestions that filter through project cards. 
 Project-filter was originally made to showcase portfolio projects. It uses a simple search bar/multi-select dropdown to filter relevant projects using tags. The multi-select function is **not** mutually exclusive (projects must contain all selected tags in order to be displayed).
 
