@@ -3,8 +3,8 @@ A multi-select dropdown with search and autosuggestions that filter through proj
 Project-filter was originally made to showcase portfolio projects. It uses a simple search bar/multi-select dropdown to filter relevant projects using tags. The multi-select function is **not** mutually exclusive (projects must contain all selected tags in order to be displayed).
 
 ## DEMO
-
-TBA
+![ProjectFilter demo gif](/project-filter/assets/demo.gif)
+Website demo: [jasmineirada.com/project-filter](https://jasmineirada.com/project-filter/)
 
 ### Features
 - Free to use, open-source, fully customizable
