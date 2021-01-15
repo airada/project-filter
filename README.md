@@ -76,7 +76,7 @@ To do:
 
 # Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/airada/project-filter/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 <br />
 # Authors
 
@@ -86,4 +86,4 @@ See also the list of [contributors](https://github.com/airada/project-filter/con
 <br />
 # License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/airada/project-filter/blob/main/LICENSE) file for details
